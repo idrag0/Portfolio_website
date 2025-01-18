@@ -79,8 +79,8 @@ nav ul li :hover{
   
  .container {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: minmax(100px, auto);
   padding: 2rem;
   }
@@ -95,7 +95,7 @@ nav ul li :hover{
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-color: #e5e7eb;
-    border-width: 0.5px;
+    border-width: 1px;
     border-style: solid;
   }
   .profile_card{
@@ -125,10 +125,31 @@ nav ul li :hover{
     border-bottom-right-radius: 10%;
   }
 
-  .card_marquee{
-    border-radius: 100px;
-    width: 500px;
-  
+  .skills_card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    span{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .card_marquee{
+      border-radius: 100px;
+      width: 500px;
+      max-height: 100px;
+    }
+  }
+
+  .about_me{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+  }
   .main-title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;

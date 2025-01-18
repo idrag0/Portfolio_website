@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css">
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+      
+        // Simulate email sending
+        setTimeout(() => {
+          document.getElementById('replyMessage').textContent = 'Thanks for contacting me!';
+        }, 1000);
+      
+        // Clear form fields
+        e.target.reset();
+      });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="contact-info">
+      <h3>CONTACT INFO</h3>
+      <div class="info-item">
+        <div class="icon"><img src="path/to/mail-icon.png" alt="Mail"></div>
+        <div>
+          <p class="label">MAIL</p>
+          <p>afbdraklsf@gmail.com</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="icon"><img src="path/to/phone-icon.png" alt="Phone"></div>
+        <div>
+          <p class="label">CALL</p>
+          <p>6asdf94055</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="icon"><img src="path/to/location-icon.png" alt="Location"></div>
+        <div>
+          <p class="label">LOCATION</p>
+          <p>Greater Noida, Uttar Pradesh, India</p>
+        </div>
+      </div>
+      <h3>SOCIALS</h3>
+      <div class="socials">
+        <a href="https://x.com/GKeshri2000?t=cfKHkpIqtfhncz3u6PeVRA&s=08" target="_blank"><img src="path/to/twitter-icon.png" alt="Twitter"></a>
+        <a href="www.linkedin.com/in/gautam-keshri" target="_blank"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="https://github.com/keshriGautam" target="_blank"><img src="path/to/github-icon.png" alt="GitHub"></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <img src="path/to/icon.png" alt="Icon">
+      <h2>Let's work <span>together</span></h2>
+      <form id="contactForm">
+        <input type="text" name="from_name" placeholder="Enter your name">
+        <input type="email" name="from_email" placeholder="Enter your email id">
+        <textarea name="message" placeholder="Enter your message"></textarea>
+        <button type="submit">Send Message</button>
+        <p id="replyMessage"></p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
