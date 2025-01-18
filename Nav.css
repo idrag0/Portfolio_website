@@ -83,6 +83,9 @@ nav ul li :hover{
     border-radius: 20px;
     transition: all 0.3s ease;
     position: relative;
+    border-color: #e5e7eb;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .card:hover{

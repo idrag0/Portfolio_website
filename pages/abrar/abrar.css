@@ -94,31 +94,40 @@ nav ul li :hover{
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-color: #777;
-    border-width: 1px;
+    border-color: #e5e7eb;
+    border-width: 0.5px;
     border-style: solid;
   }
   .profile_card{
-    
+    display: flex;
+    height: 200px;
+    width: 500px;
   }
   .description-content {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     gap: 1rem;
     align-items: center;
 
-    #profile_img{
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
+    .text-content {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+
     }
   }
   
   .profile-pic {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    height: 8rem;
+    height: 120px;
+    width: 100%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
   }
+
+  .card_marquee{
+    border-radius: 100px;
+    width: 500px;
   
   .main-title {
     font-size: 2.5rem;
