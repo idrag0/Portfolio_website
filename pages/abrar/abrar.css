@@ -80,9 +80,14 @@ nav ul li :hover{
  .container {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(1, 1fr);
   padding: 2rem;
+  }
+
+  .st{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .card {
@@ -208,10 +213,16 @@ nav ul li :hover{
   .social-icon:hover {
     background: #555;
   }
-  
-  .quote {
-    text-align: center;
-    font-style: italic;
-    font-size: 1.2rem;
+  .contact{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .quote {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2rem;
+    }
   }
+  
   
