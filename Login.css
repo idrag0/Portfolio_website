@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #0a0a0a, #24242a, #1e1e24);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Container and Panel */
+  .container {
+    width: 400px;
+    border-radius: 20px;
+    background: #1e1e24;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 1px solid #f5f7fa;
+  }
+  
+  .panel {
+    padding: 30px;
+  }
+  
+  /* Toggle Buttons */
+  .toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #f5f8fc;
+    border-radius: 5px;
+    color: #f5f8fc;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-buttons button.active {
+    background: #0f0f0f;
+    color: #fff;
+  }
+  
+  .toggle-buttons button:hover {
+    background: rgba(250, 251, 252, 0.8);
+  }
+  
+  /* Forms */
+  .form {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .form.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Heading */
+  h2 {
+    text-align: center;
+    font-weight: 300;
+    color: #f3f5f7;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Input Group */
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #1a1a1d;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #f5f8fc;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: #1e1e24;
+    padding: 0 5px;
+    color: #999;
+    font-size: 14px;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+  }
+  
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #f5f8fc;
+  }
+  
+  /* Button */
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background: #080808;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: #b3bcc7;
+    color: #0a0a0a;
+    transform: translateY(-2px);
+  }
+  
