@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="panel">
+      <div class="form-container">
+        <!-- Toggle Buttons -->
+        <div class="toggle-buttons">
+          <button id="login-btn" class="active">Login</button>
+          <button id="register-btn">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form" class="form active">
+          <h2>Welcome Back</h2>
+          <div class="input-group">
+            <input type="email" id="login-email" required>
+            <label for="login-email">Email</label>
+          </div>
+          <div class="input-group">
+            <input type="password" id="login-password" required>
+            <label for="login-password">Password</label>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Registration Form -->
+        <form id="register-form" class="form">
+          <h2>Create Account</h2>
+          <div class="input-group">
+            <input type="text" id="register-name" required>
+            <label for="register-name">Name</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="register-email" required>
+            <label for="register-email">Email</label>
+          </div>
+          <div class="input-group">
+            <input type="password" id="register-password" required>
+            <label for="register-password">Password</label>
+          </div>
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
