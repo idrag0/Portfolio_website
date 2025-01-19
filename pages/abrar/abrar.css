@@ -29,25 +29,22 @@
 
   
   
-  body {
-    font-family: Arial, sans-serif;
-    background: hsl(var(--background));
-    color: hsl(var(--foreground));
-    height: 100%;
-    width: 100%;
-    border: 1px solid red;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  height: 100%;
+  width: 100%;
+}
 
-  #Navbar{
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    width: 100%;
-    margin-top: 5px;
-    background-color: inherit;
-    z-index: 100;
-    border: 1px solid blue;
-
+#Navbar{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  margin-top: 5px;
+  background-color: inherit;
+  z-index: 100;
 }
 
 nav ul{
@@ -93,7 +90,7 @@ nav ul li :hover{
 
 .profile_card{
   display: flex;
-  height: 260px;
+  height: 249px;
   width: 500px;
   padding: 1.5rem;
   border: 1px solid pink;
@@ -105,6 +102,14 @@ nav ul li :hover{
   justify-content: space-around;
   gap: 1rem;
   align-items: center;
+}
+
+.description-content > img{
+  height: 170px;
+  width: 100%;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  object-fit: cover;
 }
 
 .text-content {
@@ -141,6 +146,16 @@ nav ul li :hover{
   gap: 10px;
 }
 
+.about_me{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 0;
+  justify-content: space-between;
+}
+
 .card_marquee{
   border-radius: 100px;
   width: 550px;
@@ -153,22 +168,35 @@ nav ul li :hover{
   gap: 10px;
 }
 
-.credentials{
+.credentials, 
+.showcase, 
+.cv, 
+.web-designing, 
+.services,
+.handles,
+.handles,
+.connect{
+  height: 160px;
   display: flex;
   flex-direction: column;
   align-content: flex-end;
 }
 
 .mid-img{
-
+  height: 50%;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cr-text{
   display: flex;
   justify-content: space-between;
   align-content: flex-end;
-  gap: 6rem;
-  border: 1px solid red;
+  gap: 5rem;
+  padding-bottom: 0;
+  padding: 1rem;
 }
 
 .txt{
@@ -177,151 +205,75 @@ nav ul li :hover{
   align-items: center;
   justify-content: center;
 }
+
+.two-icon{
+  display: flex;
+  gap: 2rem;
+}
+
+.br-text{
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  gap: 2.7rem;
+  padding-bottom: 0;
+  padding: 1rem;
+}
+
+/* .opop{
+  text-align: center;
+} */
+
+
+
+.let-txt > div{
+  text-align: center;
+  border: 1px solid red;
+}
+
+.contact-info{
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  padding-top: 0;
+}
+
+.signature,
+.showcase-img{
+  max-width: 6rem;
+  margin: 1rem;
+}
+
+.social-icon {
+  color: #f1f1f1;
+  background: #333;
+  padding: 1rem;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.social-icon:hover {
+  background: #555;
+}
   
 
   
-  .card {
-    background: linear-gradient(155deg, rgba(55, 55, 55, 1) 0%, rgba(45, 45, 45, 1) 0%, rgba(26, 26, 28, 1) 18%, rgba(0, 0, 0, 1) 100%);
-    border-radius: 1rem;
-    /* padding: 1.5rem; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-color: #e5e7eb;
-    border-width: 1px;
-    border-style: solid;
-  }
-  
+.card {
+  background: linear-gradient(155deg, rgba(55, 55, 55, 1) 0%, rgba(45, 45, 45, 1) 0%, rgba(26, 26, 28, 1) 18%, rgba(0, 0, 0, 1) 100%);
+  border-radius: 1rem;
+  /* padding: 1.5rem; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: #e5e7eb;
+  border-width: 1px;
+  border-style: solid;
+}
 
-  .skills_card{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  
-
-  .about_me{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    padding-top: 0;
-    justify-content: space-between;
-    /* border: 1px solid green; */
-  }
-
-  .cv, .web-designing, .services, .handles{
-    height: 180px;
-    width: 260px;
-    background: linear-gradient(155deg, rgba(55, 55, 55, 1) 0%, rgba(45, 45, 45, 1) 0%, rgba(26, 26, 28, 1) 18%, rgba(0, 0, 0, 1) 100%);
-    border-radius: 1rem;
-    /* padding: 1.5rem; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-color: #e5e7eb;
-    border-width: 1px;
-    border-style: solid;
-  }
-  
-  .arrow-link {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #f1f1f1;
-    text-decoration: none;
-    margin-top: 1rem;
-  }
-  
-  .marquee {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
-  .contact-info{
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
-    padding-top: 0;
-  }
-  
-  .signature,
-  .showcase-img,
-  .cv-img {.credentials{
-    background: linear-gradient(155deg, rgba(55, 55, 55, 1) 0%, rgba(45, 45, 45, 1) 0%, rgba(26, 26, 28, 1) 18%, rgba(0, 0, 0, 1) 100%);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-color: #e5e7eb;
-    border-width: 1px;
-    border-style: solid;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    text-align: left; 
-  }
-    max-width: 6rem;
-    margin: 1rem;
-  }
-  
-  .design-icons i,cv
+  /* .design-icons i,cv
   .service-icons i {
     font-size: 2rem;
     color: #f1f1f1;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .social-icon {
-    color: #f1f1f1;
-    background: #333;
-    padding: 1rem;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: background 0.3s;
-  }
-  
-  .social-icon:hover {
-    background: #555;
-  }
-  
-  .quote {background: linear-gradient(155deg, rgba(55, 55, 55, 1) 0%, rgba(45, 45, 45, 1) 0%, rgba(26, 26, 28, 1) 18%, rgba(0, 0, 0, 1) 100%);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    display: flex;height: 120px;
-    width: 100%;
-    border-top-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-color: #e5e7eb;
-    border-width: 1px;
-    border-style: solid;
-    text-align: center;
-    font-style: italic;
-    font-size: 1.2rem;
-  }
-
-  .description-content > img{
-    object-fit: contain;
-    border-radius: 20px 0 20px 0;
-  }.social-cont{
-    display: flex;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .handles{
-    color: #b1b1b1;
-  }
+  } */
 
   .img{
     width: 30px;
@@ -329,39 +281,8 @@ nav ul li :hover{
     border: 1px solid white;
     border-radius: 100%;
   }
-
-  .creatives_card{
-    background: linear-gradient(155deg, rgba(55, 55, 55, 1) 0%, rgba(45, 45, 45, 1) 0%, rgba(26, 26, 28, 1) 18%, rgba(0, 0, 0, 1) 100%);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-color: #e5e7eb;
-    border-width: 1px;
-    border-style: solid;
-  }
-
-  .px{
-    display: flex;
-    gap: 18px;
-  }
-
-  .description-content > img{
-    height: 170px;
-    width: 100%;
-    border-top-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    object-fit: cover;
-  }
-
   
-  .cr-text > div{
-    border: 1px solid navy;
-  }
+
 
   
 
